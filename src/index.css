@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f7f7f7;
+}
+.primary-button {
+    position: relative;
+    border: 1px solid #ca3cfb;
+    border-radius: 30px;
+    padding: 0.6rem 2rem;
+    overflow: hidden;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #ca3cfb;
+    font-weight: 600;
+    transition: all 200ms ease-in-out;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid #ca3cfb;
+    background: #ca3cfb;
+}
+
+.primary-button .round {
+    border-radius: 50%;
+    background-color: #ca3cfb;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: -1;
+    animation: scale-down 0.2s forwards;
+}
+
+.primary-button.animate .round {
+    animation: scale-up 0.5s forwards;
+}
+
+@keyframes scale-up {
+    to {
+        transform: scale(600);
+    }
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(600);
+    }
+    to {
+        ransform: scale(0);
+    }
+}
