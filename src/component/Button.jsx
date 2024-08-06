@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
 const Button = ({ children, url, style }) => {
     const [isAnimating, setIsAnimating] = useState(false)
     const [position, setPosition] = useState({ top: 5, left: 10 })
-
+    const navigate = useNavigate()
     const handleMouseEnter = (event) => {
         setIsAnimating(true)
         const buttonY = event.nativeEvent.offsetY
@@ -34,8 +34,9 @@ const Button = ({ children, url, style }) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 style={style}
+                onClick={() => navigate(url)}
             >
-                <Link to={url}>{children}</Link>
+                {children}
                 <span
                     className='round'
                     style={{

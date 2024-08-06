@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <>
             <section className='w-full h-full flex justify-center items-center flex-col text-center gap-4'>
-                <h1 className='text-6xl font-semibold mb-1 mt-10 leading-snug'>
+                <h1 className='text-4xl sm:text-6xl font-semibold mb-1 mt-10 leading-snug'>
                     The Revolution in <br></br>Sprinkler Design is Here
                 </h1>
                 <p className='w-1/2 text-xl mb-10 text-gray-600'>

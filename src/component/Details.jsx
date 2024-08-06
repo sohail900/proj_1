@@ -4,20 +4,22 @@ import DetailSec from './DetailSec'
 const Details = () => {
     return (
         <>
-            <section className='w-[80%] m-auto  grid gap-10 mt-20' id='detail'>
-                <div className='w-full flex gap-4'>
+            <section
+                className='w-[90%] lg:w-[80%] m-auto  grid gap-10 mt-20'
+                id='detail'
+            >
+                <div className='w-full flex flex-col gap-4 md:flex-row'>
                     <img
                         src={asset1}
                         height={250}
-                        width={350}
-                        className='flex-1  rounded-lg'
+                        className='flex-1 rounded-lg w-full md:w-[350px]'
                     />
                     <DetailSec
                         title='Sprinkler Placement'
                         description='Sprink AutoPilot Automatically identifies walls in a drawing, even if the lines are in different layers. Sprinkler are strategically placed.'
                     />
                 </div>
-                <div className='w-full flex gap-4'>
+                <div className='w-full flex flex-col gap-4 md:flex-row'>
                     <DetailSec
                         title='Pipe Placement'
                         description='Sprink AutoPilot Automatically identifies walls in a drawing, even if the lines are in different layers. Sprinkler are strategically placed.'
@@ -25,16 +27,14 @@ const Details = () => {
                     <img
                         src={asset1}
                         height={250}
-                        width={350}
-                        className='flex-1  rounded-lg'
+                        className='flex-1  rounded-lg md:w-[350px]'
                     />
                 </div>
-                <div className='w-full flex gap-4'>
+                <div className='w-full flex flex-col gap-4 md:flex-row'>
                     <img
                         src={asset1}
                         height={250}
-                        width={350}
-                        className='flex-1  rounded-lg'
+                        className='flex-1  rounded-lg md:w-[350px]'
                     />
                     <DetailSec
                         title='Hydraulic Calc'

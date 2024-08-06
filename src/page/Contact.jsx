@@ -3,8 +3,8 @@ import Button from '../component/Button'
 const Contact = () => {
     return (
         <>
-            <section className=' w-[80%] m-auto mt-20 flex justify-between '>
-                <div className='flex flex-col gap-4 w-[50%]'>
+            <section className='w-[80%] m-auto mt-20 flex flex-col center  lg:flex-row lg:justify-between'>
+                <div className='flex flex-col gap-4 w-full mb-4 lg:w-[50%] lg:mb-0'>
                     <h1 className='text-2xl font-semibold'>Contact Us</h1>
                     <p className='text-xl text-gray-500 mb-6'>
                         We are here to assist you.<br></br> Feel free to reach
@@ -19,9 +19,9 @@ const Contact = () => {
                         </p>
                     </div>
                 </div>
-                <div className='flex-1'>
+                <div className='w-full lg:flex-1'>
                     <form>
-                        <div className='flex gap-4 mb-4'>
+                        <div className='flex flex-col sm:flex-row gap-4 mb-4'>
                             <input
                                 type='text'
                                 name='firstName'
@@ -35,7 +35,7 @@ const Contact = () => {
                                 className='flex-1 border-b-2 bg-transparent py-3 px-4 border-gray-400 focus:outline-none focus:border-blue-500'
                             />
                         </div>
-                        <div className='flex gap-4 mb-4 mb-4'>
+                        <div className='flex flex-col sm:flex-row gap-4 mb-4'>
                             <input
                                 type='email'
                                 name='email'

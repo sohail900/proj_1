@@ -31,7 +31,7 @@ const Signin = () => {
                             id='email'
                             name='email'
                             placeholder='Email'
-                            className='bg-gray-100 rounded-xl py-4 px-7 '
+                            className='bg-gray-400 rounded-xl py-4 px-7 '
                         />
                         <label
                             htmlFor='password'
@@ -45,7 +45,7 @@ const Signin = () => {
                             id='password'
                             name='password'
                             placeholder='Password'
-                            className='bg-gray-100 rounded-xl py-4 px-7 mb-6'
+                            className='bg-gray-400 rounded-xl py-4 px-7 mb-6'
                         />
                     </form>
                     <Button style={{ width: '100%', borderRadius: '10px' }}>
