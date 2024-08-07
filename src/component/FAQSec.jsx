@@ -28,10 +28,7 @@ const faqData = [
 const FAQSection = () => {
     return (
         <>
-            <section
-                className='w-[80%] md:w-[50%] m-auto   p-10 mt-24'
-                id='faq'
-            >
+            <section className='w-full md:w-[50%] m-auto   p-10 mt-24' id='faq'>
                 <h1 className='text-3xl font-semibold mb-8 text-center '>
                     Frequently Asked Questions
                 </h1>

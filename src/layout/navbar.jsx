@@ -15,7 +15,7 @@ const Navbar = () => {
                     </span>
                 </Link>
                 <ul
-                    className='flex flex-col items-center absolute right-5 bg-white top-7 z-10 px-6 py-8 rounded-lg shadow-md gap-10 font-xl md:flex-row md:relative transition-all md:bg-transparent md:shadow-none md:top-0 md:px-0 md:py-0'
+                    className='flex flex-col items-center absolute right-5 bg-white top-7 z-10 px-16 py-8 rounded-lg shadow-md gap-10 font-xl lg:flex-row lg:relative transition-all lg:bg-transparent lg:shadow-none lg:top-0 lg:px-0 lg:py-0'
                     style={showNav ? { top: ' 1.75rem' } : { top: '-100%' }}
                 >
                     <li>
@@ -41,14 +41,14 @@ const Navbar = () => {
                         Sign In
                     </Button>
                     <button
-                        className='block md:hidden absolute mb-6 right-1 top-1'
+                        className='block lg:hidden absolute mb-6 right-1 top-1'
                         onClick={() => setShowNav(!showNav)}
                     >
                         <X />
                     </button>
                 </ul>
                 <button
-                    className='block md:hidden'
+                    className='block lg:hidden'
                     onClick={() => setShowNav(!showNav)}
                 >
                     <AlignJustify />

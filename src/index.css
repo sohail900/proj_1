@@ -3,8 +3,10 @@
 @tailwind utilities;
 :root {
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
     background-color: #f7f7f7;
+}
+html {
+    scroll-behavior: smooth;
 }
 .primary-button {
     position: relative;
@@ -13,19 +15,23 @@
     padding: 0.6rem 2rem;
     overflow: hidden;
     background-color: transparent;
-    text-transform: uppercase;
     color: #ca3cfb;
-    font-weight: 600;
-    transition: all 200ms ease-in-out;
+    font-weight: 500;
+    transition: all 300ms ease-in-out;
 }
-
+.icon {
+    display: none;
+    transition: display 300ms ease-in-out;
+}
 .primary-button:hover {
     cursor: pointer;
     color: white;
     border: 1px solid #ca3cfb;
     background: #ca3cfb;
 }
-
+.primary-button:hover .icon {
+    display: block;
+}
 .primary-button .round {
     border-radius: 50%;
     background-color: #ca3cfb;
@@ -36,10 +42,9 @@
     animation: scale-down 0.2s forwards;
 }
 
-.primary-button.animate .round {
+.primary-button .animate .round {
     animation: scale-up 0.5s forwards;
 }
-
 @keyframes scale-up {
     to {
         transform: scale(600);

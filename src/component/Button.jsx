@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { useNavigate } from 'react-router-dom'
 const Button = ({ children, url, style }) => {
     const [isAnimating, setIsAnimating] = useState(false)
     const [position, setPosition] = useState({ top: 5, left: 10 })
@@ -30,7 +30,7 @@ const Button = ({ children, url, style }) => {
     return (
         <>
             <button
-                className={`primary-button ${isAnimating ? 'animate' : ''}`}
+                className={`primary-button ${isAnimating && 'animate'}`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 style={style}
