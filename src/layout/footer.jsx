@@ -12,7 +12,7 @@ const Footer = () => {
                         className='mb-7 mt-10'
                         width={100}
                     />
-                    <div className='flex gap-6 '>
+                    <div className='flex gap-6 cursor-pointer opacity-70'>
                         <Facebook size={24} />
                         <Instagram size={24} />
                         <Linkedin size={24} />
@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 <hr className='opacity-50'></hr>
                 <div className='flex place-items-center justify-center py-2 gap-4'>
-                    <p className='footer-content'>Copyright eLabdTech</p>
+                    <p className='footer-content'>Copyright eLabd Tech</p>
                     <Link to='#'>Privacy policy</Link>
                     <Link to='#'>Terms & conditions</Link>
                 </div>

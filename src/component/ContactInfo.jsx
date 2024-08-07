@@ -4,7 +4,7 @@ const ContactInfo = () => {
     return (
         <>
             <section className='w-full px-10 sm:px-16 mt-24 grid place-items-center'>
-                <div className='w-max m-auto  px-12 sm:px-20  py-10 flex flex-col items-center shadow-md rounded-xl'>
+                <div className='box_shadow w-max m-auto  px-12 sm:px-20  py-10 flex flex-col items-center  rounded-xl'>
                     <h1 className='text-3xl font-semibold mb-3'>
                         Still have questions?
                     </h1>
@@ -21,9 +21,9 @@ const ContactInfo = () => {
                             justifyContent: 'center',
                         }}
                     >
-                        Contact Us{' '}
+                        Contact Us
                         <span className='icon ml-2'>
-                            <Phone size={17} fill='white' />
+                            <Phone size={17} fill='white' className='mt-1' />
                         </span>
                     </Button>
                 </div>

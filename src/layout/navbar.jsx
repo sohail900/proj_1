@@ -28,14 +28,7 @@ const Navbar = () => {
                     <li>
                         <a href='#detail'>Pricing</a>
                     </li>
-                    <Button
-                        url='./signin'
-                        style={{
-                            fontSize: '0.9rem',
-                            backgroundColor: '#ca3cfb',
-                            color: '#fff',
-                        }}
-                    >
+                    <Button url='./signin' hover={'animate'}>
                         Sign In
                     </Button>
                     <button

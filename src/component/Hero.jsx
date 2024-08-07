@@ -19,7 +19,7 @@ const Hero = () => {
                 <Button
                     url='/contact'
                     style={{
-                        fontSize: '0.9rem',
+                        fontSize: '1rem',
                         width: '15rem',
                         display: 'flex',
                         alignItem: 'center',
@@ -28,7 +28,7 @@ const Hero = () => {
                 >
                     Contact Us{' '}
                     <span className='icon ml-2'>
-                        <Phone size={17} fill='white' />
+                        <Phone size={16} fill='white' className='mt-1' />
                     </span>
                 </Button>
                 <Link

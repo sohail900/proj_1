@@ -33,7 +33,7 @@ const Signin = () => {
                     onClick={(e) => e.stopPropagation()}
                 >
                     <h1 className='text-2xl font-semibold mb-4'>Sign In</h1>
-                    <form className='flex flex-col gap-4'>
+                    <form className='flex flex-col gap-4' method='post'>
                         <label
                             htmlFor='email'
                             className='text-xl font-semibold mb-1'

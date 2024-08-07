@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
-const Button = ({ children, url, style, setOpenVideo }) => {
+const Button = ({ children, url, style, setOpenVideo, hover }) => {
     const navigate = useNavigate()
     const clickHandler = () => {
         navigate(url)
@@ -9,7 +9,7 @@ const Button = ({ children, url, style, setOpenVideo }) => {
     return (
         <>
             <button
-                className={`primary-button  'animate'}`}
+                className={`primary-button ${hover}`}
                 style={style}
                 onClick={clickHandler}
             >
@@ -24,6 +24,7 @@ Button.propTypes = {
     url: PropTypes.string.isRequired,
     style: PropTypes.string.isRequired,
     setOpenVideo: PropTypes.string.isRequired,
+    hover: PropTypes.string.isRequired,
 }
 
 export default Button

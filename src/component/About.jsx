@@ -2,12 +2,27 @@ import { useState } from 'react'
 import { Play } from 'lucide-react'
 import Button from './Button'
 import AboutSec from './AboutSec'
-import sprinkle from '../assets/sprinkle.png'
-import pipe from '../assets/pipe.png'
-import hy from '../assets/hy.png'
+import sprinkle from '../assets/gif/placesprinklers.gif'
+import pipe from '../assets/gif/connectpipe.gif'
+import hy from '../assets/gif/hydrocalc.gif'
+import stock from '../assets/gif/stocklist.gif'
 import AboutSecVid from './AboutSecVid'
+const aboutContent = {
+    title1: 'Sprinkler Placement',
+    description1:
+        'Sprink AutoPilot Automatically identifies walls in a drawing, even if the lines are in different layers. Sprinkler are strategically placed.',
+    title2: 'Pipe Placement',
+    description2:
+        'The most efficient routes for piping are automatically calculated and drawn, optimizing the layout to reduce material costs and installation time.',
+    title3: 'Hydraulic Calc',
+    description3:
+        'SInstantly calculate pressure and flow requirements of the system and determines the best pipe sizes',
+    title4: 'Stocklisting',
+    description4: 'Generate an instant stocklist',
+}
 const About = () => {
     const [openVideo, setOpenVideo] = useState(false)
+
     return (
         <>
             <section
@@ -20,22 +35,24 @@ const About = () => {
                         alt='sprinkle'
                         height={250}
                         className='flex-1 rounded-lg w-full lg:w-[350px]'
+                        loading='lazy'
                     />
                     <AboutSec
-                        title='Sprinkler Placement'
-                        description='Sprink AutoPilot Automatically identifies walls in a drawing, even if the lines are in different layers. Sprinkler are strategically placed.'
+                        title={aboutContent.title1}
+                        description={aboutContent.description1}
                     />
                 </div>
                 <div className='w-full h-full flex flex-col gap-4 lg:flex-row lg:h-[380px]'>
                     <AboutSec
-                        title='Pipe Placement'
-                        description='The most efficient routes for piping are automatically calculated and drawn, optimizing the layout to reduce material costs and installation time.'
+                        title={aboutContent.title2}
+                        description={aboutContent.description2}
                     />
                     <img
                         src={pipe}
                         alt='pipe'
                         height={250}
                         className='flex-1  rounded-lg lg:w-[350px]'
+                        loading='lazy'
                     />
                 </div>
                 <div className='w-full h-auto flex flex-col gap-4 lg:flex-row lg:h-[380px]'>
@@ -44,10 +61,11 @@ const About = () => {
                         alt='hydraulic'
                         height={250}
                         className='flex-1  rounded-lg lg:w-[350px]'
+                        loading='lazy'
                     />
                     <AboutSec
-                        title='Hydraulic Calc'
-                        description='SInstantly calculate pressure and flow requirements of the system and determines the best pipe sizes'
+                        title={aboutContent.title3}
+                        description={aboutContent.description3}
                         button={
                             <Button
                                 style={{
@@ -72,8 +90,8 @@ const About = () => {
                 </div>
                 <div className='w-full h-auto  overflow-hidden flex flex-col gap-4 lg:flex-row lg:h-[380px]'>
                     <AboutSec
-                        title='Stocklisting'
-                        description='Generate an instant stocklist'
+                        title={aboutContent.title4}
+                        description={aboutContent.description4}
                         button={
                             <Button
                                 style={{
@@ -93,10 +111,11 @@ const About = () => {
                         }
                     />
                     <img
-                        src={hy}
+                        src={stock}
                         alt='stocklisting'
                         height={250}
                         className='flex-1  rounded-lg lg:w-[350px]'
+                        loading='lazy'
                     />
                 </div>
             </section>

@@ -18,7 +18,11 @@ const FAQItem = ({ question, answer }) => {
                 <h2 className='text-lg md:text-xl'>{question}</h2>
                 {isOpen ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
             </div>
-            {isOpen && <p className='mt-4 text-xl  text-gray-600'>{answer}</p>}
+            {isOpen && (
+                <p className='mt-4 text-md text-light_color md:text-lg'>
+                    {answer}
+                </p>
+            )}
         </div>
     )
 }

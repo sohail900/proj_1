@@ -16,7 +16,8 @@ const AboutSecVid = ({ setOpenVideo }) => {
                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                     referrerPolicy='strict-origin-when-cross-origin'
                     allowfullscreen
-                    className='rounded-2xl w-[85%] h-[70%] md:w-[70%]'
+                    className='rounded-2xl w-[85%] h-[80%] md:w-[70%]'
+                    loading='lazy'
                 ></iframe>
                 <CircleX
                     size={30}
