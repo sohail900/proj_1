@@ -12,16 +12,25 @@ const Footer = () => {
                         className='mb-7 mt-10'
                         width={100}
                     />
-                    <div className='flex gap-6 cursor-pointer opacity-70'>
-                        <Facebook size={24} />
-                        <Instagram size={24} />
-                        <Linkedin size={24} />
-                        <Youtube size={25} />
+                    <div className='flex gap-7 cursor-pointer '>
+                        <Facebook size={26} className='social_icon' />
+                        <Instagram size={26} className='social_icon' />
+                        <Linkedin size={26} className='social_icon' />
+                        <Youtube size={27} className='social_icon' />
                     </div>
                 </div>
                 <hr className='opacity-50'></hr>
                 <div className='flex place-items-center justify-center py-2 gap-4'>
-                    <p className='footer-content'>Copyright eLabd Tech</p>
+                    <p className='footer-content'>
+                        A Project By{' '}
+                        <Link
+                            to='https://elabdtech.com/'
+                            target='__blank'
+                            className='underline'
+                        >
+                            ElabdTech
+                        </Link>
+                    </p>
                     <Link to='#'>Privacy policy</Link>
                     <Link to='#'>Terms & conditions</Link>
                 </div>

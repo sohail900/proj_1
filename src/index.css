@@ -57,3 +57,12 @@ html {
 .box_shadow {
     box-shadow: 1px 1px 30px 0px rgba(0, 0, 0, 0.15);
 }
+.social_icon {
+    fill: none;
+    transition: all 400ms ease-in-out;
+    color: #fffefe9f;
+}
+.social_icon:hover {
+    fill: #ca3cfb;
+    color: #ffffff;
+}
