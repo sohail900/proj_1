@@ -1,25 +1,30 @@
-import { Facebook, Instagram, Linkedin } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
+import Logo from '../assets/logo_white.svg'
 const Footer = () => {
     return (
         <>
-            <footer className='mt-14 w-full  bg-main_color text-white'>
+            <footer className='mt-14 w-full  bg-custom_gradient text-white'>
                 <div className='pt-6 mb-6 flex flex-col gap-2 justify-between items-center'>
-                    <h1 className='text-center text-2xl font-semibold '>
-                        Sprink{' '}
-                        <span className='font-normal text-[0.8rem] block -my-[0.2rem]'>
-                            Autopilot
-                        </span>
-                    </h1>
+                    <img
+                        src={Logo}
+                        alt='logo'
+                        className='mb-7 mt-10'
+                        width={100}
+                    />
                     <div className='flex gap-6 '>
-                        <Facebook size={25} />
-                        <Instagram size={25} />
-                        <Linkedin size={25} />
+                        <Facebook size={24} />
+                        <Instagram size={24} />
+                        <Linkedin size={24} />
+                        <Youtube size={25} />
                     </div>
                 </div>
-                <hr className='opacity-20'></hr>
-                <p className='text-center mt-2 text-gray-200'>
-                    &copy; 2024 Bull - All rights reserved.
-                </p>
+                <hr className='opacity-50'></hr>
+                <div className='flex place-items-center justify-center py-2 gap-4'>
+                    <p className='footer-content'>Copyright eLabdTech</p>
+                    <Link to='#'>Privacy policy</Link>
+                    <Link to='#'>Terms & conditions</Link>
+                </div>
             </footer>
         </>
     )

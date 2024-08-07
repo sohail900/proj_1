@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Button from '../component/Button'
 import { AlignJustify, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import Logo from '../assets/Logo.svg'
+import Button from '../component/Button'
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false)
@@ -9,13 +10,10 @@ const Navbar = () => {
         <>
             <section className='w-full px-16 py-[1.2rem] flex justify-between items-center'>
                 <Link to='/' className='text-center text-2xl font-semibold'>
-                    Sprink{' '}
-                    <span className='font-normal text-[0.8rem] block -my-[0.2rem]'>
-                        Autopilot
-                    </span>
+                    <img src={Logo} alt='logo' width={60} />
                 </Link>
                 <ul
-                    className='flex flex-col items-center absolute right-5 bg-white top-7 z-10 px-16 py-8 rounded-lg shadow-md gap-10 font-xl lg:flex-row lg:relative transition-all lg:bg-transparent lg:shadow-none lg:top-0 lg:px-0 lg:py-0'
+                    className='flex flex-col items-center absolute right-5 bg-white top-7 z-10 px-16 py-8 rounded-lg shadow-md gap-10 font-xl font-medium lg:flex-row lg:relative transition-all lg:bg-transparent lg:shadow-none lg:top-0 lg:px-0 lg:py-0'
                     style={showNav ? { top: ' 1.75rem' } : { top: '-100%' }}
                 >
                     <li>

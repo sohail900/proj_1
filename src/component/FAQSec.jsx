@@ -1,4 +1,4 @@
-import Button from './Button'
+import ContactInfo from './ContactInfo'
 import FAQItem from './FAQItem'
 
 const faqData = [
@@ -29,7 +29,7 @@ const FAQSection = () => {
     return (
         <>
             <section className='w-full md:w-[50%] m-auto   p-10 mt-24' id='faq'>
-                <h1 className='text-3xl font-semibold mb-8 text-center '>
+                <h1 className='text-2xl md:text-3xl font-semibold mb-8 text-center '>
                     Frequently Asked Questions
                 </h1>
                 {faqData.map((item, index) => (
@@ -40,22 +40,8 @@ const FAQSection = () => {
                     />
                 ))}
             </section>
-            <section className='w-auto md:w-max m-auto px-20 py-10 mt-24 text-center shadow-sm bg-white rounded-xl'>
-                <h1 className='text-3xl font-semibold mb-3'>
-                    Still have questions?
-                </h1>
-                <p className='text-xl text-gray-500 mb-4'>
-                    Contact us for more information
-                </p>
-                <Button
-                    url='/contact'
-                    style={{
-                        fontSize: '0.9rem',
-                    }}
-                >
-                    Contact Us
-                </Button>
-            </section>
+            {/* Contact Us Info */}
+            <ContactInfo />
         </>
     )
 }

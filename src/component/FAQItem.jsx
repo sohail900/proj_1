@@ -15,7 +15,7 @@ const FAQItem = ({ question, answer }) => {
                 className='flex justify-between items-center cursor-pointer'
                 onClick={toggleOpen}
             >
-                <h2 className='text-xl '>{question}</h2>
+                <h2 className='text-lg md:text-xl'>{question}</h2>
                 {isOpen ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
             </div>
             {isOpen && <p className='mt-4 text-xl  text-gray-600'>{answer}</p>}

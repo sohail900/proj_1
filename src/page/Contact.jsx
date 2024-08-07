@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Phone, Mail } from 'lucide-react'
-import Button from '../component/Button'
+import ContactSec from '../component/ContactSec'
 const varients = {
     initial: { x: 180, scale: 0.9 },
     animate: { x: 0, scale: 1 },
@@ -22,10 +22,12 @@ const Contact = () => {
                             exit: { duration: 0, type: 'tween' }, // Set exit duration here
                         }}
                     >
-                        <h1 className='text-3xl font-semibold'>Contact Us</h1>
-                        <p className='text-xl text-gray-500 mb-6'>
-                            We are here to assist you.<br></br> Feel free to
-                            reach out to us via email or phone.
+                        <h1 className='text-2xl md:text-4xl font-semibold'>
+                            Contact Us
+                        </h1>
+                        <p className='w-[85%] text-lg md:text-xl text-gray-500 mb-6 mt-3'>
+                            Need help with Sprink AutoPilot? Contact us below,
+                            and we’ll get back to you within 24 hours.
                         </p>
                     </motion.div>
                     <div>
@@ -38,54 +40,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='w-full lg:flex-1'>
-                    <form>
-                        <div className='flex flex-col sm:flex-row gap-4 mb-4'>
-                            <input
-                                type='text'
-                                name='firstName'
-                                placeholder='First Name'
-                                className='flex-1 border-b-2 bg-transparent py-3 px-4 border-gray-400 focus:outline-none focus:border-blue-500'
-                            />
-                            <input
-                                type='text'
-                                name='lastName'
-                                placeholder='Last Name'
-                                className='flex-1 border-b-2 bg-transparent py-3 px-4 border-gray-400 focus:outline-none focus:border-blue-500'
-                            />
-                        </div>
-                        <div className='flex flex-col sm:flex-row gap-4 mb-4'>
-                            <input
-                                type='email'
-                                name='email'
-                                placeholder='Email'
-                                className='w-full border-b-2 bg-transparent py-3 px-4 border-gray-400 focus:outline-none focus:border-blue-500'
-                            />
-
-                            <input
-                                type='tel'
-                                name='phone'
-                                placeholder='Phone'
-                                className='w-full border-b-2 bg-transparent py-3 px-4 border-gray-400 focus:outline-none focus:border-blue-500'
-                            />
-                        </div>
-                        <div className='mb-4'>
-                            <textarea
-                                name='message'
-                                placeholder='Message'
-                                className='w-full border-b-2 bg-transparent py-3 px-4 border-gray-400 focus:outline-none focus:border-blue-500'
-                                rows='4'
-                            ></textarea>
-                        </div>
-                        <Button
-                            style={{
-                                float: 'right',
-                                background: '#ca3cfb',
-                                color: '#fff',
-                            }}
-                        >
-                            Sent
-                        </Button>
-                    </form>
+                    <ContactSec />
                 </div>
             </section>
         </>
